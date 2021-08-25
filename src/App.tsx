@@ -5,11 +5,14 @@ import RouteWrapper from 'components/router/RouteWrapper';
 import Loader from 'components/router/Loader';
 
 import { ROUTES } from 'constants/routes';
+import 'styles/App.css';
+
+type Props = {};
 
 const Home = React.lazy(() => import('pages/Home'));
 const PageNotFound = React.lazy(() => import('pages/PageNotFound'));
 
-const App = () => {
+const App: React.FC<Props> = () => {
   return (
     <Router>
       <Suspense fallback={<Loader />}>

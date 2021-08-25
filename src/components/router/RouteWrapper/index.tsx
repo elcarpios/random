@@ -25,7 +25,7 @@ const RouteWrapper: React.FC<Props> = ({
 );
 
 RouteWrapper.propTypes = {
-  component: PropTypes.element.isRequired,
+  component: PropTypes.elementType.isRequired,
   layout: PropTypes.element
 };
 

@@ -11,6 +11,7 @@ export default defineConfig({
       '~': resolve(__dirname, 'src'),
       assets: resolve(__dirname, 'public/assets/'),
       components: resolve(__dirname, 'src/components/'),
+      styles: resolve(__dirname, 'src/styles/'),
       pages: resolve(__dirname, 'src/pages/'),
       constants: resolve(__dirname, 'src/constants/'),
       layouts: resolve(__dirname, 'src/layouts/'),

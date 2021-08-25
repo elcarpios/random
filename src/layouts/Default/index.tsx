@@ -8,7 +8,13 @@ type Props = {
 const NAME = 'default';
 
 const Default: React.FC<Props> = ({ children }) => {
-  return <div data-layout={NAME}>{children}</div>;
+  return (
+    <div className="h-full" data-layout={NAME}>
+      <header></header>
+      <main>{children}</main>
+      <footer></footer>
+    </div>
+  );
 };
 
 Default.propTypes = {
